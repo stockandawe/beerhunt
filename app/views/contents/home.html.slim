@@ -1,0 +1,33 @@
+= container_tag do
+  .container
+    .row
+      .col-md-6.col-md-offset-3.site
+        .site-title
+          h2 Beer Hunt
+        .post
+          .row
+            .col-md-2
+              img
+                = image_tag "sample-ui-pic1.jpg", class: "img-circle", style: "width:30px;"
+            .col-md-7
+              | Saison Ale
+              br
+              small Brewery: Allagash Brewing Company
+            .col-md-3
+              = link_to "http://www.brewerydb.com/beer/44agxl" do
+                span.glyphicon.glyphicon-log-out
+        .post
+          .row
+            .col-md-2
+              img
+                = image_tag "sample-ui-pic2.jpg", class: "img-circle", style: "width:30px;"
+            .col-md-7
+              | The Victor Brewery
+              br
+              small small Location: Victor, New York
+            .col-md-3
+              = link_to "http://www.brewerydb.com/brewery/BHezTP" do
+                span.glyphicon.glyphicon-log-out
+        .site-footer
+          p
+            | Crafted in San Francisco
