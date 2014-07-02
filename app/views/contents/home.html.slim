@@ -1,33 +1,92 @@
+= render 'layouts/header'
+= render 'post_details_modal'
+
 = container_tag do
   .container
     .row
-      .col-md-6.col-md-offset-3.site
-        .site-title
-          h2 Beer Hunt
-        .post
-          .row
-            .col-md-2
-              img
-                = image_tag "sample-ui-pic1.jpg", class: "img-circle", style: "width:30px;"
-            .col-md-7
-              | Saison Ale
-              br
-              small Brewery: Allagash Brewing Company
-            .col-md-3
-              = link_to "http://www.brewerydb.com/beer/44agxl" do
-                span.glyphicon.glyphicon-log-out
-        .post
-          .row
-            .col-md-2
-              img
-                = image_tag "sample-ui-pic2.jpg", class: "img-circle", style: "width:30px;"
-            .col-md-7
-              | The Victor Brewery
-              br
-              small small Location: Victor, New York
-            .col-md-3
-              = link_to "http://www.brewerydb.com/brewery/BHezTP" do
-                span.glyphicon.glyphicon-log-out
-        .site-footer
-          p
-            | Crafted in San Francisco
+      .col-md-12
+        .row(style="margin-top: 20px;margin-bottom: 20px;")
+          .col-md-12
+            .glyphicon.glyphicon-calendar
+            span(style="padding-left: 5px;") Week of June 30th, 2014
+        .row(style="margin-top: 20px;margin-bottom: 20px;")
+          .col-md-1(style="text-align: right;")
+            .glyphicon.glyphicon-chevron-up(style="font-size: 16px;")
+            .small 101
+          .col-md-1
+            img
+              = image_tag "https://s3.amazonaws.com/uifaces/faces/twitter/chexee/128.jpg", class: "img-circle", style: "width:35px;"
+          .col-md-7
+            = link_to "Saison Ale", "http://www.brewerydb.com/beer/44agxl"
+            br
+            .small Brewery: Allagash Brewing Company
+            = link_to "#", :data => { :target => "#myModal", :toggle => "modal"} do
+              .badge
+                | 21 comments
+          .col-md-3
+        .row(style="margin-top: 20px;margin-bottom: 20px;")
+          .col-md-1(style="text-align: right;")
+            .glyphicon.glyphicon-chevron-up(style="font-size: 16px;")
+            .small 25
+          .col-md-1
+            img
+              = image_tag "sample-ui-pic2.jpg", class: "img-circle", style: "width:35px;"
+          .col-md-7
+            = link_to "The Victory Brewery", "http://www.brewerydb.com/brewery/BHezTP"
+            br
+            .small Location: Victory, New York
+            = link_to "#", :data => { :target => "#myModal", :toggle => "modal"} do
+              .badge
+                | 10 comments
+          .col-md-3
+    .row
+      .col-md-12
+        .row(style="margin-top: 20px;margin-bottom: 20px;")
+          .col-md-12
+            .glyphicon.glyphicon-calendar
+            span(style="padding-left: 5px;") Week of June 23rd, 2014
+        .row(style="margin-top: 20px;margin-bottom: 20px;")
+          .col-md-1(style="text-align: right;")
+            .glyphicon.glyphicon-chevron-up(style="font-size: 16px;")
+            .small 37
+          .col-md-1
+            img
+              = image_tag "https://s3.amazonaws.com/uifaces/faces/twitter/sindresorhus/128.jpg", class: "img-circle", style: "width:35px;"
+          .col-md-7
+            = link_to "Space Cowboy Country Ale", "http://www.brewerydb.com/beer/GH37ia"
+            br
+            .small Brewery: Oxbow Brewing Company
+            = link_to "#", :data => { :target => "#myModal", :toggle => "modal"} do
+              .badge
+                | 11 comments
+          .col-md-3
+        .row(style="margin-top: 20px;margin-bottom: 20px;")
+          .col-md-1(style="text-align: right;")
+            .glyphicon.glyphicon-chevron-up(style="font-size: 16px;")
+            .small 12
+          .col-md-1
+            img
+              = image_tag "https://s3.amazonaws.com/uifaces/faces/twitter/brad_frost/128.jpg", class: "img-circle", style: "width:35px;"
+          .col-md-7
+            = link_to "Oxbow Brewing Company", "http://www.brewerydb.com/brewery/qs9b4m/"
+            br
+            .small Location: Newcastle, Maine
+            = link_to "#", :data => { :target => "#myModal", :toggle => "modal"} do
+              .badge
+                | 1 comment
+          .col-md-3
+        .row(style="margin-top: 20px;margin-bottom: 20px;")
+          .col-md-1(style="text-align: right;")
+            .glyphicon.glyphicon-chevron-up(style="font-size: 16px;")
+            .small 12
+          .col-md-1
+            img
+              = image_tag "https://s3.amazonaws.com/uifaces/faces/twitter/adellecharles/128.jpg", class: "img-circle", style: "width:35px;"
+          .col-md-7
+            = link_to "Naughty 90", "http://www.brewerydb.com/beer/oeGSxs/"
+            br
+            .small Location: Toppling Goliath Brewing Company
+            = link_to "#", :data => { :target => "#myModal", :toggle => "modal"} do
+              .badge
+                | 12 comments
+          .col-md-3

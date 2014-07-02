@@ -2,7 +2,10 @@
 
 // Vendor
 @import 'bootstrap';
-@import 'feedo/style';
 
 // Globals
 @import 'globals/mixins';
+
+// Bootstrap overrides
+@import 'bootstrap_overrides/glyphicon';
+@import 'bootstrap_overrides/modal';
